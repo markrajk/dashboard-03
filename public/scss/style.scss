@@ -1089,7 +1089,7 @@ a:focus {
 .header {
   padding: 3.4rem 3.2rem 0.5rem 4rem;
   font-size: 1.6rem;
-  border-bottom: 1px solid #e1e1e1;
+  //border-bottom: 1px solid #e1e1e1;
 
   &-top {
     display: flex;
@@ -1186,7 +1186,7 @@ a:focus {
         color: #9699a6;
       }
 
-      @include respond(desktop-sm) {
+      @include respond(desktop-xxsm) {
         margin-left: 0;
         width: 100%;
       }
@@ -1303,7 +1303,6 @@ a:focus {
       }
 
       &:first-of-type + a + a {
-        //margin-top: -.2rem;
         font-size: 1rem;
       }
 
@@ -1336,8 +1335,10 @@ a:focus {
 // ==================================
 .teams-main-view {
   max-width: 110rem;
-  padding:2.5rem 3.6rem;
-  padding-left: 4.2rem;
+  padding:2.5rem 0;
+  margin:0 3.6rem;
+  margin-left: 4.2rem;
+  border-top: 1px solid #e1e1e1;
 
   &-header {
     margin-bottom: 3.8rem;
@@ -1517,8 +1518,10 @@ a:focus {
 // TEAM PEOPLE VIEW START
 // ==================================
 .teams-people-view {
-  padding:2.5rem 3.6rem;
-  padding-left: 4.2rem;
+  padding:2.5rem 0;
+  margin:0 3.6rem;
+  margin-left: 4.2rem;
+  border-top: 1px solid #e1e1e1;
   max-width: 88.2rem;
 
   &-header {
@@ -1622,14 +1625,14 @@ a:focus {
 
           &:nth-of-type(2) {
             flex: .485!important;
-            @include respond(desktop-xsm) {
+            @include respond(desktop-xxsm) {
               display: none;
             }
           }
 
           &:nth-of-type(3) {
             flex: .565!important;
-            @include respond(desktop-xxsm) {
+            @include respond(desktop-xsm) {
               display: none;
             }
           }

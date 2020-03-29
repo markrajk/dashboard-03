@@ -660,8 +660,7 @@ a:focus {
 
 .header {
   padding: 3.4rem 3.2rem 0.5rem 4rem;
-  font-size: 1.6rem;
-  border-bottom: 1px solid #e1e1e1; }
+  font-size: 1.6rem; }
   .header-top {
     display: flex;
     align-items: center; }
@@ -732,7 +731,7 @@ a:focus {
         transform: translate(90%, -50%);
         font-size: 1.5rem;
         color: #9699a6; }
-      @media (max-width: 767px) {
+      @media (max-width: 379px) {
         .header-top .input-container {
           margin-left: 0;
           width: 100%; } }
@@ -827,8 +826,10 @@ a:focus {
 
 .teams-main-view {
   max-width: 110rem;
-  padding: 2.5rem 3.6rem;
-  padding-left: 4.2rem; }
+  padding: 2.5rem 0;
+  margin: 0 3.6rem;
+  margin-left: 4.2rem;
+  border-top: 1px solid #e1e1e1; }
   .teams-main-view-header {
     margin-bottom: 3.8rem; }
     .teams-main-view-header .btn-custom-primary {
@@ -937,8 +938,10 @@ a:focus {
         max-width: 100%; } }
 
 .teams-people-view {
-  padding: 2.5rem 3.6rem;
-  padding-left: 4.2rem;
+  padding: 2.5rem 0;
+  margin: 0 3.6rem;
+  margin-left: 4.2rem;
+  border-top: 1px solid #e1e1e1;
   max-width: 88.2rem; }
   .teams-people-view-header {
     margin-bottom: 1rem; }
@@ -998,12 +1001,12 @@ a:focus {
         flex: 1 !important; } }
   .teams-people-view .panel-body .table-header-fixed td:nth-of-type(2), .teams-people-view .panel-body .table-header-fixed th:nth-of-type(2) {
     flex: 0.485 !important; }
-    @media (max-width: 575px) {
+    @media (max-width: 379px) {
       .teams-people-view .panel-body .table-header-fixed td:nth-of-type(2), .teams-people-view .panel-body .table-header-fixed th:nth-of-type(2) {
         display: none; } }
   .teams-people-view .panel-body .table-header-fixed td:nth-of-type(3), .teams-people-view .panel-body .table-header-fixed th:nth-of-type(3) {
     flex: 0.565 !important; }
-    @media (max-width: 379px) {
+    @media (max-width: 575px) {
       .teams-people-view .panel-body .table-header-fixed td:nth-of-type(3), .teams-people-view .panel-body .table-header-fixed th:nth-of-type(3) {
         display: none; } }
   .teams-people-view .panel-body .table-header-fixed td:nth-of-type(4), .teams-people-view .panel-body .table-header-fixed th:nth-of-type(4) {
