@@ -500,7 +500,8 @@ a:focus {
         display: inline-block;
         width: 100%;
         height: 100%;
-        color: inherit; }
+        color: inherit;
+        transition: all .1s ease-in-out; }
         .dropdown-custom-list-item-link:hover, .dropdown-custom-list-item-link:focus {
           background-color: #f7f9fa;
           color: inherit; }
@@ -940,7 +941,7 @@ a:focus {
   padding-left: 4.2rem;
   max-width: 88.2rem; }
   .teams-people-view-header {
-    margin-bottom: .6rem; }
+    margin-bottom: 1rem; }
     .teams-people-view-header .btn-custom-primary {
       margin-right: 1.1rem;
       font-size: 1.4rem;
@@ -980,6 +981,11 @@ a:focus {
       color: #647282; }
       .teams-people-view .panel-body .table-header-fixed thead th i {
         margin-left: 0.6rem; }
+      .teams-people-view .panel-body .table-header-fixed thead th .dropdown-custom-trigger {
+        padding: .6rem; }
+        .teams-people-view .panel-body .table-header-fixed thead th .dropdown-custom-trigger i:first-of-type {
+          font-size: 1.3rem;
+          margin-left: .6rem; }
   .teams-people-view .panel-body .table-header-fixed tbody {
     max-height: calc(100vh - 11rem - 16rem - 8rem); }
   .teams-people-view .panel-body .table-header-fixed tbody tr {
