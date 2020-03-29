@@ -478,7 +478,6 @@ a:focus {
         display: block; }
   .dropdown-custom-list {
     display: none;
-    padding: 1.5rem 0;
     min-width: 16rem;
     position: absolute;
     bottom: 0;
