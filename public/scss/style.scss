@@ -1599,6 +1599,7 @@ a:focus {
 
         & tbody {
           max-height: calc(100vh - 11rem - 16rem - 8rem);
+          border-bottom: 1px solid #E6E8EB;
         }
 
         & tr {
@@ -1609,6 +1610,10 @@ a:focus {
           & tr {
             padding: .6rem 0;
             border-bottom: 1px solid #ededf5;
+
+            &:last-child {
+              border: none;
+            }
           }
         }
 
