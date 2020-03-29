@@ -740,6 +740,72 @@ a:focus {
   }
 }
 
+// DROPDOWN CUSTOM
+.dropdown-custom {
+  padding: .3rem;
+  position: relative;
+ 
+
+  &-trigger {
+    padding: 1.1rem 1.4rem;
+    display: inline-block;
+    color: inherit;
+    border: .2rem solid transparent;
+    transition: all .1s ease-in-out;
+
+    &:focus,
+    &:active {
+      color: #0070e0;
+      border-radius: .6rem;
+      border-color:#0070e0;
+      box-shadow: 0 0 0 .3rem #a6bdeb;
+
+      & ~ .dropdown-custom-list {
+        display: block;
+      }
+    }
+  }
+
+  &-list {
+    display: none;
+    padding: 1.5rem 0;
+    min-width: 16rem;
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    transform: translate(-100%, 100%);
+    list-style: none;
+    border-radius: 4px;
+    box-shadow: 0 8px 15px 0 rgba(159, 159, 159, 0.16);
+    border: solid 1px #dbdde0;
+    background-color: #ffffff;
+    z-index: 1000;
+    transition: display 1s ease-in-out;
+
+    &-item {
+      font-size: 1.5rem;
+      line-height: 1.33;
+      color: #3d464d;
+
+      &-link {
+        padding: .7rem 1.7rem;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        color: inherit;
+
+        &:hover,
+        &:focus {
+        background-color: #f7f9fa;
+        color: inherit;
+      }
+      }
+
+      
+    }
+  }
+}
+
 // [type="radio"]:checked,
 // [type="radio"]:not(:checked) {
 //     position: absolute;
@@ -802,7 +868,7 @@ a:focus {
   &-main {
     padding: 2.7em 2.5rem;
     height: 100%;
-    width: 9rem;
+    width: 8.4rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1020,7 +1086,7 @@ a:focus {
 // HEADER START
 // ==================================
 .header {
-  padding: 3.4rem 3.2rem 0.5rem 3.6rem;
+  padding: 3.4rem 3.2rem 0.5rem 4rem;
   font-size: 1.6rem;
   border-bottom: 1px solid #e1e1e1;
 
@@ -1270,6 +1336,7 @@ a:focus {
 .teams-main-view {
   max-width: 110rem;
   padding:2.5rem 3.6rem;
+  padding-left: 4.2rem;
 
   &-header {
     margin-bottom: 3.8rem;
@@ -1450,16 +1517,11 @@ a:focus {
 // ==================================
 .teams-people-view {
   padding:2.5rem 3.6rem;
+  padding-left: 4.2rem;
   max-width: 88.2rem;
-  // display: grid;
-  // grid-template-areas:
-  //   "card-1"
-  //   "card-2";
-  // grid-template-rows: auto 1fr;
-  // grid-template-columns: 1fr;
 
   &-header {
-    margin-bottom: 2.1rem;
+    margin-bottom: .6rem;
 
     .btn-custom-primary {
       margin-right: 1.1rem;
@@ -1507,7 +1569,7 @@ a:focus {
       & .table-header-fixed {
         & thead {
           border-bottom: 1px solid #E6E8EB;
-          padding-bottom: 1.26rem;
+          padding-bottom: .2rem;
           
           & th {
             font-size: 1.2rem;
@@ -1531,16 +1593,13 @@ a:focus {
 
         & tbody {
           & tr {
-            padding: .8rem 0;
+            padding: .6rem 0;
             border-bottom: 1px solid #ededf5;
           }
         }
 
         & td,
         & th {
-          // &:last-of-type {
-          //   flex: 0.3 !important;
-          // }
 
           &:nth-of-type(1) {
             flex: .7!important;
