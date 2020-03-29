@@ -1,0 +1,608 @@
+<!DOCTYPE html5>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Teams | Single user</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../public/css/bootstrap.css">
+    <link rel="stylesheet" href="../public/css/style.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+        <!-- sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-menu-toggle">
+                <i class="icon-c-chevron-l"></i>
+            </div>
+            <div class="sidebar-main">
+                <ul class="sidebar-main-top">
+                    <li class="sidebar-main-item logo">
+                        <a href="#" class="sidebar-main-link">
+                            <!-- <img src="../public/svg/sidenav-logo.svg" alt="logo"> -->
+                            <img src="../public/img/logo-png.png" alt="logo">
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item active">
+                        <a href="#" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-c-people"></i>
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item">
+                        <a href="#" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-c-bars"></i>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-main-item">
+                        <a href="#" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-c-phone"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="sidebar-main-bottom">
+                    <li class="sidebar-main-item">
+                        <a href="#" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-c-settings"></i>
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item">
+                        <a href="#" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-c-question"></i>
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item">
+                        <a href="../sign-in/index.html" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-c-exit"></i>
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item logo">
+                        <a href="#" class="sidebar-main-link">
+                            <div class="letter-circle"><span>T</span></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- sidebar menu -->
+            <div class="sidebar-menu">
+                <div class="sidebar-menu-header">
+                    <h2>Teams</h2>
+                    <a href="#">
+                        <i class="icon-c-plus-c"></i>
+                    </a>
+                </div>
+                <div class="input-container">
+                    <i class="icon-c-search"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <ul class="sidebar-menu-list">
+                    <li class="sidebar-menu-list-item">
+                        <a href="#" class="sidebar-menu-list-item-link active">Team Marketing</a>
+                    </li>
+                    <li class="sidebar-menu-list-item">
+                        <a href="#" class="sidebar-menu-list-item-link">Team Electric Boys</a>
+                    </li>
+                    <li class="sidebar-menu-list-item">
+                        <a href="#" class="sidebar-menu-list-item-link">Team Sales</a>
+                    </li>
+                    <li class="sidebar-menu-list-item">
+                        <a href="#" class="sidebar-menu-list-item-link">Team Water Pipes</a>
+                    </li>
+                </ul>
+                <div class="sidebar-menu-footer">
+                    <a href="#" class="sidebar-menu-footer-create-new">Create a new team</a>
+                    <a href="#" class="btn-custom-white">
+                        Get the mobile app
+                        <img src="../public/img/play-big.png" alt="google play store icon" class="play-icon">
+                        <img src="../public/img/apple-big.png" alt="apple store icon" class="apple-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-content">
+            <header class="header">
+                <div class="header-top">
+                    <h1 class="header-top-title">Team Marketing</h1>
+                    <div class="header-top-info">
+                        <i class="icon-c-users"></i> / <span>12</span>
+                    </div>
+                    <div class="header-top-info">
+                        <i class="icon-c-eye"></i> / <span>12</span>
+                    </div>
+                    <div class="header-top-info">
+                        <i class="icon-c-robot"></i> / <span>12</span>
+                    </div>
+                    <a href="#" class="header-top-btn"><i class="icon-c-dots-h"></i></a>
+                </div>
+                <p class="header-small">
+                    We make great ads, campaigns and create a super brand.
+                </p>
+                <div class="header-bottom">
+                    <div class="choose">
+                        <a href="../index.html">
+                            <i class="icon-c-bars"></i>
+                            Main view
+                        </a>
+
+                        <a href="../teams-people-view/index.html" class="active">
+                            <i class="icon-c-people"></i>
+                            People view
+                        </a>
+                    </div>
+
+                    <div class="dropdown">
+                        <a class="btn btn-primary btn-lg dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Invite new
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+
+                    <input class="input" type="text" placeholder="Search people...">
+
+                    <a href="#" class="header-bottom-icon">
+                        <i class="icon-c-document"></i>
+                    </a>
+                    <a href="#" class="header-bottom-icon">
+                        <i class="icon-c-settings"></i>
+                    </a>
+                    <a href="#" class="header-bottom-icon">
+                        <i class="icon-c-lines"></i>
+                    </a>
+                </div>
+
+            </header>
+
+            <main class="teams-single-user">
+                <h2 class="subheader card-1">Esa Savolainen
+                    <span class="subheader-link"><a href="#">Back to team page</a></span>
+                </h2>
+
+                <div class="accordion accordion-custom card-2" id="accordionExample">
+                    <div class="accordion-custom-section blue">
+                        <div id="headingOne">
+                            <a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                aria-controls="collapseOne" class="accordion-custom-trigger">
+                            <span class="accordion-custom-icon"><span></span></span>
+                            <p>Weekly charts</p>
+                            </a>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="accordion-custom-body">
+                                <div class="graph-container">
+                                    <svg  xmlns="http://www.w3.org/2000/svg" height="200" width="200" viewBox="0 0 200 200" data-value="60">
+                                    <path class="bg" stroke="#ccc" d="M41 149.5a77 77 0 1 1 150 0"  fill="none"/>
+                                    <path class="meter" stroke="#09c" d="M41 149.5a77 77 0 1 1 150 0" fill="none" stroke-dasharray="350" stroke-dashoffset="350"/>
+                                  </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-custom-section green">
+                        <div id="headingTwo">
+                            <a href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo" class="accordion-custom-trigger">
+                            <span class="accordion-custom-icon"><span></span></span>
+                            <p>Weekly charts</p>
+                            </a>
+                        </div>
+
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                            data-parent="#accordionExample">
+                            <div class="accordion-custom-body">
+
+                                <div class="graph-card">
+                                    <div class="graph-card-header">
+                                        <h3>Productivity</h3>
+                                        <div class="options">
+                                            <a href="#" class="options-link active">Months</a>
+                                            <span class="options-divider">I</span>
+                                            <a href="#" class="options-link">Weeks</a>
+                                        </div>
+                                    </div>
+                                    <div class="graph-card-body">
+                                        <div class="bar">
+                                            <div class="bar-fill bar-fill-red" style="height: 40%;"></div>
+                                            <div class="bar-info">JAN</div>
+                                        </div>
+                                        <div class="bar">
+                                            <div class="bar-fill bar-fill-red" style="height: 35%;"></div>
+                                            <div class="bar-info">FEB</div>
+                                        </div>
+                                        <div class="bar">
+                                            <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                            <div class="bar-info">MAR</div>
+                                        </div>
+                                        <div class="bar">
+                                            <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
+                                            <div class="bar-info">APR</div>
+                                        </div>
+                                        <div class="bar">
+                                            <div class="bar-fill bar-fill-green" style="height: 72%;"></div>
+                                            <div class="bar-info">MAY</div>
+                                        </div>
+                                        <div class="bar">
+                                            <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                            <div class="bar-info">JUN</div>
+                                        </div>
+                                        <div class="bar">
+                                            <div class="bar-fill bar-fill-green" style="height: 65%;"></div>
+                                            <div class="bar-info">JUL</div>
+                                        </div>
+                                        
+                                      
+                                    </div>
+                                </div>
+
+                                <div class="graph-card">
+                                    <div class="graph-card-header">
+                                        <h3>Teamwork</h3>
+                                        <div class="options">
+                                            <a href="#" class="options-link active">Months</a>
+                                            <span class="options-divider">I</span>
+                                            <a href="#" class="options-link">Weeks</a>
+                                        </div>
+                                    </div>
+                                    <div class="graph-card-body">
+                                        <div class="bar">
+                                            <div class="bar-fill bar-fill-red" style="height: 40%;"></div>
+                                            <div class="bar-info">JAN</div>
+                                        </div>
+                                        <div class="bar">
+                                            <div class="bar-fill bar-fill-red" style="height: 35%;"></div>
+                                            <div class="bar-info">FEB</div>
+                                        </div>
+                                        <div class="bar">
+                                            <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                            <div class="bar-info">MAR</div>
+                                        </div>
+                                        <div class="bar">
+                                            <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
+                                            <div class="bar-info">APR</div>
+                                        </div>
+                                        <div class="bar">
+                                            <div class="bar-fill bar-fill-green" style="height: 72%;"></div>
+                                            <div class="bar-info">MAY</div>
+                                        </div>
+                                        <div class="bar">
+                                            <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                            <div class="bar-info">JUN</div>
+                                        </div>
+                                        <div class="bar">
+                                            <div class="bar-fill bar-fill-green" style="height: 65%;"></div>
+                                            <div class="bar-info">JUL</div>
+                                        </div>
+                                        
+                                      
+                                    </div>
+                                </div>
+
+                                <div class="graph-card">
+                                    <div class="graph-card-header">
+                                        <h3>Given Feedback</h3>
+                                        <div class="options">
+                                            <a href="#" class="options-link active">Months</a>
+                                            <span class="options-divider">I</span>
+                                            <a href="#" class="options-link">Weeks</a>
+                                        </div>
+                                    </div>
+                                    <div class="graph-card-body">
+                                        <div class="bar">
+                                            <div class="bar-fill bar-fill-red" style="height: 40%;"></div>
+                                            <div class="bar-info">JAN</div>
+                                        </div>
+                                        <div class="bar">
+                                            <div class="bar-fill bar-fill-red" style="height: 35%;"></div>
+                                            <div class="bar-info">FEB</div>
+                                        </div>
+                                        <div class="bar">
+                                            <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                            <div class="bar-info">MAR</div>
+                                        </div>
+                                        <div class="bar">
+                                            <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
+                                            <div class="bar-info">APR</div>
+                                        </div>
+                                        <div class="bar">
+                                            <div class="bar-fill bar-fill-green" style="height: 72%;"></div>
+                                            <div class="bar-info">MAY</div>
+                                        </div>
+                                        <div class="bar">
+                                            <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                            <div class="bar-info">JUN</div>
+                                        </div>
+                                        <div class="bar">
+                                            <div class="bar-fill bar-fill-green" style="height: 65%;"></div>
+                                            <div class="bar-info">JUL</div>
+                                        </div>
+                                        
+                                      
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-custom-section orange">
+                        <div id="headingThree">
+                            <a href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree" class="accordion-custom-trigger">
+                            <span class="accordion-custom-icon"><span></span></span>
+                            <p>Comments</p>
+                            </a>
+                        </div>
+
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#accordionExample">
+                            <div class="accordion-custom-body">
+
+                                <div class="accordion-custom-body-comment">
+                                    <div class="accordion-custom-body-comment-header">
+                                        <img class="img" src="../public/img/p-01.png" alt="users image">
+                                        <p class="name">Marlboro Smith</p>
+                                        <span class="time">14h</span> ago
+                                        <span class="clock"></span>
+                                    </div>
+                                    <div class="accordion-custom-body-comment-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nesciunt doloremque, reprehenderit, illo repellendus, ut sint magnam saepe ab optio iste quasi modi ipsam. Laborum, labore! Enim unde placeat laboriosam.</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-custom-body-comment">
+                                    <div class="accordion-custom-body-comment-header">
+                                        <img class="img" src="../public/img/p-01.png" alt="users image">
+                                        <p class="name">Marlboro Smith</p>
+                                        <span class="time">14h</span> ago
+                                        <span class="clock"></span>
+                                    </div>
+                                    <div class="accordion-custom-body-comment-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ipsam praesentium iste explicabo debitis eaque asperiores nostrum iusto. Ex, corrupti.</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-custom-body-comment">
+                                    <div class="accordion-custom-body-comment-header">
+                                        <img class="img" src="../public/img/p-01.png" alt="users image">
+                                        <p class="name">Marlboro Smith</p>
+                                        <span class="time">14h</span> ago
+                                        <span class="clock"></span>
+                                    </div>
+                                    <div class="accordion-custom-body-comment-body">
+                                        <p>Lorem, ipsum dolor.</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-custom-body-comment">
+                                    <div class="accordion-custom-body-comment-header">
+                                        <img class="img" src="../public/img/p-01.png" alt="users image">
+                                        <p class="name">Marlboro Smith</p>
+                                        <span class="time">14h</span> ago
+                                        <span class="clock"></span>
+                                    </div>
+                                    <div class="accordion-custom-body-comment-body">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, odio. Quam adipisci quasi cumque quaerat?</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-custom-body-comment">
+                                    <div class="accordion-custom-body-comment-header">
+                                        <img class="img" src="../public/img/p-01.png" alt="users image">
+                                        <p class="name">Marlboro Smith</p>
+                                        <span class="time">14h</span> ago
+                                        <span class="clock"></span>
+                                    </div>
+                                    <div class="accordion-custom-body-comment-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui laboriosam nihil laborum rem unde, blanditiis quod ea! Possimus aliquid voluptatem sit eveniet assumenda, commodi nam?</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-custom-body-comment">
+                                    <div class="accordion-custom-body-comment-header">
+                                        <img class="img" src="../public/img/p-01.png" alt="users image">
+                                        <p class="name">Marlboro Smith</p>
+                                        <span class="time">14h</span> ago
+                                        <span class="clock"></span>
+                                    </div>
+                                    <div class="accordion-custom-body-comment-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, nihil similique.</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-custom-body-comment">
+                                    <div class="accordion-custom-body-comment-header">
+                                        <img class="img" src="../public/img/p-01.png" alt="users image">
+                                        <p class="name">Marlboro Smith</p>
+                                        <span class="time">14h</span> ago
+                                        <span class="clock"></span>
+                                    </div>
+                                    <div class="accordion-custom-body-comment-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed dolores ratione impedit nemo quis, perspiciatis dolorem voluptatem sit quos voluptatum molestiae aspernatur doloribus ducimus aliquid aliquam facere quibusdam quo iure?</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-custom-body-comment">
+                                    <div class="accordion-custom-body-comment-header">
+                                        <img class="img" src="../public/img/p-01.png" alt="users image">
+                                        <p class="name">Marlboro Smith</p>
+                                        <span class="time">14h</span> ago
+                                        <span class="clock"></span>
+                                    </div>
+                                    <div class="accordion-custom-body-comment-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nesciunt doloremque, reprehenderit, illo repellendus, ut sint magnam saepe ab optio iste quasi modi ipsam. Laborum, labore! Enim unde placeat laboriosam.</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-custom-body-comment">
+                                    <div class="accordion-custom-body-comment-header">
+                                        <img class="img" src="../public/img/p-01.png" alt="users image">
+                                        <p class="name">Marlboro Smith</p>
+                                        <span class="time">14h</span> ago
+                                        <span class="clock"></span>
+                                    </div>
+                                    <div class="accordion-custom-body-comment-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ipsam praesentium iste explicabo debitis eaque asperiores nostrum iusto. Ex, corrupti.</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-custom-body-comment">
+                                    <div class="accordion-custom-body-comment-header">
+                                        <img class="img" src="../public/img/p-01.png" alt="users image">
+                                        <p class="name">Marlboro Smith</p>
+                                        <span class="time">14h</span> ago
+                                        <span class="clock"></span>
+                                    </div>
+                                    <div class="accordion-custom-body-comment-body">
+                                        <p>Lorem, ipsum dolor.</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-custom-body-comment">
+                                    <div class="accordion-custom-body-comment-header">
+                                        <img class="img" src="../public/img/p-01.png" alt="users image">
+                                        <p class="name">Marlboro Smith</p>
+                                        <span class="time">14h</span> ago
+                                        <span class="clock"></span>
+                                    </div>
+                                    <div class="accordion-custom-body-comment-body">
+                                        <p onload="console.log('HELLO')">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, odio. Quam adipisci quasi cumque quaerat?</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-custom-body-comment">
+                                    <div class="accordion-custom-body-comment-header">
+                                        <img class="img" src="../public/img/p-01.png" alt="users image">
+                                        <p class="name">Marlboro Smith</p>
+                                        <span class="time">14h ago</span>
+                                    </div>
+                                    <div class="accordion-custom-body-comment-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui laboriosam nihil laborum rem unde, blanditiis quod ea! Possimus aliquid voluptatem sit eveniet assumenda, commodi nam?</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-custom-body-comment">
+                                    <div class="accordion-custom-body-comment-header">
+                                        <img class="img" src="../public/img/p-01.png" alt="users image">
+                                        <p class="name">Marlboro Smith</p>
+                                        <span class="time">14h</span> ago
+                                        <span class="clock"></span>
+                                    </div>
+                                    <div class="accordion-custom-body-comment-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nesciunt doloremque, reprehenderit, illo repellendus, ut sint magnam saepe ab optio iste quasi modi ipsam. Laborum, labore! Enim unde placeat laboriosam.</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-custom-body-comment">
+                                    <div class="accordion-custom-body-comment-header">
+                                        <img class="img" src="../public/img/p-01.png" alt="users image">
+                                        <p class="name">Marlboro Smith</p>
+                                        <span class="time">14h</span> ago
+                                        <span class="clock"></span>
+                                    </div>
+                                    <div class="accordion-custom-body-comment-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ipsam praesentium iste explicabo debitis eaque asperiores nostrum iusto. Ex, corrupti.</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-custom-body-comment">
+                                    <div class="accordion-custom-body-comment-header">
+                                        <img class="img" src="../public/img/p-01.png" alt="users image">
+                                        <p class="name">Marlboro Smith</p>
+                                        <span class="time">14h</span> ago
+                                        <span class="clock"></span>
+                                    </div>
+                                    <div class="accordion-custom-body-comment-body">
+                                        <p>Lorem, ipsum dolor.</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-custom-body-comment">
+                                    <div class="accordion-custom-body-comment-header">
+                                        <img class="img" src="../public/img/p-01.png" alt="users image">
+                                        <p class="name">Marlboro Smith</p>
+                                        <span class="time">14h</span> ago
+                                        <span class="clock"></span>
+                                    </div>
+                                    <div class="accordion-custom-body-comment-body">
+                                        <p onload="console.log('HELLO')">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, odio. Quam adipisci quasi cumque quaerat?</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-custom-body-comment">
+                                    <div class="accordion-custom-body-comment-header">
+                                        <img class="img" src="../public/img/p-01.png" alt="users image">
+                                        <p class="name">Marlboro Smith</p>
+                                        <span class="time">14h ago</span>
+                                    </div>
+                                    <div class="accordion-custom-body-comment-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui laboriosam nihil laborum rem unde, blanditiis quod ea! Possimus aliquid voluptatem sit eveniet assumenda, commodi nam?</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-custom-body-comment">
+                                    <div class="accordion-custom-body-comment-header">
+                                        <img class="img" src="../public/img/p-01.png" alt="users image">
+                                        <p class="name">Marlboro Smith</p>
+                                        <span class="time">14h</span> ago
+                                        <span class="clock"></span>
+                                    </div>
+                                    <div class="accordion-custom-body-comment-body">
+                                        <p>Lorem, ipsum dolor.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+    <script src="../public/js/jquery-3.4.1.min.js"></script>
+    <script src="../public/js/bootstrap.bundle.js"></script>
+    <script src="../public/js/main.js"></script>
+
+
+    <script>
+        // Get all the Meters
+        const meters = document.querySelectorAll('svg[data-value] .meter');
+
+        meters.forEach( (path) => {
+        // Get the length of the path
+        let length = path.getTotalLength();
+        // console.log(length) once and hardcode the stroke-dashoffset and stroke-dasharray in the SVG if possible 
+        // or uncomment to set it dynamically
+        // path.style.strokeDashoffset = length;
+        // path.style.strokeDasharray = length;
+
+        // Get the value of the meter
+        let value = parseInt(path.parentNode.getAttribute('data-value'));
+        // Calculate the percentage of the total length
+        let to = length * ((100 - value) / 100);
+        // Trigger Layout in Safari hack https://jakearchibald.com/2013/animated-line-drawing-svg/
+        path.getBoundingClientRect();
+        // Set the Offset
+        path.style.strokeDashoffset = Math.max(0, to);  
+        });
+
+
+        // TRUNCATE COMMENT TEXT
+        const comments = document.querySelectorAll('.accordion-custom-body-comment-body p');
+        [...comments].forEach(c => c.innerHTML = c.innerHTML.length > 100 ? `${c.innerHTML.substring(0,98)}... <a href="#">Read more</a>` : c.innerHTML)
+    </script>
+</body>
+
+</html>
