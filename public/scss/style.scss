@@ -204,8 +204,6 @@ a:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 5.7rem;
-  height: 2.5rem;
   font-size: 1.2rem;
   font-weight: 500;
   line-height: 0.5;
@@ -1089,12 +1087,15 @@ a:focus {
     }
 
     & .input-container {
+      //min-width: 20rem;
+      width: 25.6rem;
       margin-left: 1rem;
       position: relative;
 
       & input {
-        max-width: 25.6rem;
+        width: 100%;
         padding: .5rem 3.5rem;
+        padding-right: 1.5rem;
         border: none;
         outline: none;
         font-size: 1.5rem;
@@ -1116,6 +1117,11 @@ a:focus {
         transform: translate(90%, -50%);
         font-size: 1.5rem;
         color: #9699a6;
+      }
+
+      @include respond(desktop-sm) {
+        margin-left: 0;
+        width: 100%;
       }
     }
 
@@ -1306,7 +1312,7 @@ a:focus {
   }
 
   &-body {
-    height: calc(100vh - 30rem);
+    max-height: calc(100vh - 30rem);
     display: grid;
     grid-template-areas:
       "card-1 card-2 card-3";
@@ -1444,17 +1450,16 @@ a:focus {
 // ==================================
 .teams-people-view {
   padding:2.5rem 3.6rem;
-  max-width: 110rem;
-  height: calc(100vh - 16.3rem - 4px);
-  display: grid;
-  grid-template-areas:
-    "card-1"
-    "card-2";
-  grid-template-rows: auto 1fr;
-  grid-template-columns: 1fr;
+  width: 88.2rem;
+  // display: grid;
+  // grid-template-areas:
+  //   "card-1"
+  //   "card-2";
+  // grid-template-rows: auto 1fr;
+  // grid-template-columns: 1fr;
 
   &-header {
-    margin-bottom: 3.8rem;
+    margin-bottom: 2.1rem;
 
     .btn-custom-primary {
       margin-right: 1.1rem;
@@ -1494,47 +1499,24 @@ a:focus {
   }
 
   &-body {
-
-  }
-
-  & .card-1 {
-    grid-area: card-1;
-  }
-
-  & .card-2 {
-    grid-area: card-2;
-  }
-
-  & .subheader {
-    margin-bottom: 3.9rem;
-    font-size: 2rem;
-    font-weight: 500;
-    line-height: 1.3;
-    letter-spacing: -0.12px;
-    color: #363f4e;
-
-    & span {
-      margin-left: 0.3rem;
-    }
+    max-height: calc(100vh - 30rem);
   }
 
   & .panel {
     &-body {
       & .table-header-fixed {
         & thead {
-          border-radius: 9px;
-          background-color: #f9fafc;
-
+          border-bottom: 1px solid #E6E8EB;
+          padding-bottom: 1.26rem;
+          
           & th {
-            padding: 1.3rem 0;
-            font-size: 1rem;
+            font-size: 1.2rem;
             font-weight: 500;
-            line-height: 1.3;
-            color: #8e99ad;
+            line-height: 1.33;
+            color: #647282;
 
             & i {
               margin-left: 0.6rem;
-              transform: rotateZ(-90deg);
             }
           }
         }
@@ -1544,93 +1526,81 @@ a:focus {
         }
 
         & tr {
-          padding: 0 1.7rem;
+          //padding: 0 1.7rem;
         }
 
         & tbody {
           & tr {
-            padding-top: 2rem;
-            padding-bottom: 2rem;
+            padding: .8rem 0;
             border-bottom: 1px solid #ededf5;
           }
         }
 
         & td,
         & th {
-          &:last-of-type {
-            flex: 0.3 !important;
+          // &:last-of-type {
+          //   flex: 0.3 !important;
+          // }
+
+          &:nth-of-type(1) {
+            flex: .7!important;
           }
 
-          &:nth-last-of-type(3),
-          &:nth-last-of-type(4) {
-            flex: 0.56 !important;
+          &:nth-of-type(2) {
+            flex: .48!important;
+          }
+
+          &:nth-of-type(3) {
+            flex: .58!important;
+          }
+
+          &:nth-of-type(4) {
+            flex: .1!important;
           }
         }
 
         &-col-1 {
           & img {
+            margin-left: .9rem;
             margin-right: 1.5rem;
-            width: 4rem;
-            height: 4rem;
+            width: 4.1rem;
+            height: 4.1rem;
             border-radius: 50%;
           }
           & .name {
-            font-size: 1.55rem;
-            font-weight: 500;
-            line-height: 1.29;
-            letter-spacing: -0.16px;
-            color: #293446;
+            font-size: 1.4rem;
+            line-height: 1.36;
+            color: #1b2733;
+            
             & span {
-              margin-top: .1rem;
+              margin-top: .2rem;
               display: block;
               font-size: 1.2rem;
-              font-weight: 500;
               line-height: 1.33;
-              color: #8393ad;
+              color: #647281;
             }
           }
         }
 
-        &-col-2,
+        &-col-2 {
+          font-size: 1.4rem;
+          line-height: 1.36;
+          color: #1b2733;
+        }
+
         &-col-3 {
           & .btn-custom-table {
-            width: 7.05rem;
-            height: 3.05rem;
-            font-size: 1.35rem;
+            padding: .6rem 1.8rem;
+            font-size: 1.4rem;
             font-weight: 500;
-            line-height: 0.52;
-            letter-spacing: 0.27px;
+            line-height: 1.36;
             color: #ffffff;
           }
         }
 
         &-col-4 {
-          & .feedbacks {
-            font-size: 1.4rem;
-            font-weight: 500;
-            line-height: 1.36;
-            letter-spacing: -0.28px;
-            color: #35c0ff;
-            & .amount {
-              color: #293446;
-            }
-            & .when {
-              display: block;
-              font-size: 1rem;
-              line-height: 1.3;
-              letter-spacing: 0.16px;
-              text-align: left;
-              color: #8393ad;
-            }
-          }
-        }
-
-        &-col-5 {
-          & a {
-            font-size: 2rem;
-            color: #b3bac4;
-            transform: rotateZ(180deg);
-          }
+          font-size: 1.3rem;
+          color: #647282;
         }
       }
     }
